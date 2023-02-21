@@ -15,12 +15,15 @@
 $home = $pages->get('/'); // homepage
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 	<head id="html-head">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title><?php echo $page->title; ?></title>
+		<title><?php echo $title; ?></title>
+		<meta name="description" content="<?php echo $description; ?>"/>
+		<meta name="keywords" content="<?php echo $keywords; ?>"/>
+		<meta name="author" content="<?php echo $author; ?>" />
+
 		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates; ?>style.css" />
-		<script src="<?php echo $config->urls->templates; ?>scripts/main.js"></script>
 	</head>
 	<body id="html-body">
 
@@ -55,12 +58,8 @@ $home = $pages->get('/'); // homepage
 		</main>
 
 		<aside class="sidebar">
-			<div class="wrapper">
-				<?php if($page->hasChildren): ?>
-				<ul> 
-					<?php echo $page->children->each("<li><a href='{url}'>{title}</a></li>"); // subnav ?>
-				</ul>	
-				<?php endif; ?>
+			<div id="sidebar" class="wrapper">
+				sidebar content
 			</div>
 		</aside>
 
@@ -74,5 +73,8 @@ $home = $pages->get('/'); // homepage
 			</div>
 		</footer>
 	
+	<!-- scripts -->
+	<script src="<?php echo $config->urls->templates; ?>scripts/main.js"></script>
+
 	</body>
 </html>

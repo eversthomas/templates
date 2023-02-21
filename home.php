@@ -4,8 +4,11 @@
 
 ?>
 
-<div id="content">
+<article id="content">
 	<h2><?=$page->title?></h2>
 	<?=$page->body?>
-</div>	
+</article>	
 	
+<div id="sidebar">
+	<?=$page->sidebar?>
+</div>

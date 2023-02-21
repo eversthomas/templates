@@ -6,3 +6,11 @@
 
 // include automatic scss compiler
 include 'style.php';
+
+// some meta tag variables
+
+$title = "main page title";
+$subtitle = "a small subtitle for this page";
+$description = "a funny and sinpledescription for this nice site";
+$author = "Thomas Evers";
+$keywords = "one two three four five six seven eight nine ten";
