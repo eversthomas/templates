@@ -24,32 +24,55 @@ $home = $pages->get('/'); // homepage
 	</head>
 	<body id="html-body">
 
-		<p id="topnav">
-			<?php echo $home->and($home->children)->implode(" / ", "<a href='{url}'>{title}</a>"); ?>
-		</p>
+		<header class="site-header">
+
+			<div class="wrapper">
+
+				<p id="topnav">
+					<?php echo $home->and($home->children)->implode(" / ", "<a href='{url}'>{title}</a>"); ?>
+				</p>
+				
+				<hr />
+				
+				<h1 id="headline">
+					<?php if($page->parents->count()): // breadcrumbs ?>
+						<?php echo $page->parents->implode(" &gt; ", "<a href='{url}'>{title}</a>"); ?> &gt;
+					<?php endif; ?>
+					<?php echo $page->title; // headline ?>
+				</h1>
+
+			</div>
+
+		</header>
+
+		<main class="content">
+			<div class="wrapper">
+				<article id="content">
+					Default content
+				</article>
+			</div>
+
+		</main>
+
+		<aside class="sidebar">
+			<div class="wrapper">
+				<?php if($page->hasChildren): ?>
+				<ul> 
+					<?php echo $page->children->each("<li><a href='{url}'>{title}</a></li>"); // subnav ?>
+				</ul>	
+				<?php endif; ?>
+			</div>
+		</aside>
+
+		<footer class="site-footer">
+			<div class="wrapper">
 		
-		<hr />
-		
-		<h1 id="headline">
-			<?php if($page->parents->count()): // breadcrumbs ?>
-				<?php echo $page->parents->implode(" &gt; ", "<a href='{url}'>{title}</a>"); ?> &gt;
-			<?php endif; ?>
-			<?php echo $page->title; // headline ?>
-		</h1>
-		
-		<div id="content">
-			Default content
-		</div>
-	
-		<?php if($page->hasChildren): ?>
-		<ul> 
-			<?php echo $page->children->each("<li><a href='{url}'>{title}</a></li>"); // subnav ?>
-		</ul>	
-		<?php endif; ?>
-		
-		<?php if($page->editable()): ?>
-		<p><a href='<?php echo $page->editUrl(); ?>'>Edit this page</a></p>
-		<?php endif; ?>
+				<?php if($page->editable()): ?>
+				<p><a href='<?php echo $page->editUrl(); ?>'>Edit this page</a></p>
+				<?php endif; ?>
+
+			</div>
+		</footer>
 	
 	</body>
 </html>
