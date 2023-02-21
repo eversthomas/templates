@@ -11,10 +11,20 @@
 </div>
 
 <article id="content">
-	<h2><?=$page->title?></h2>
-	<p>List of latest Blog Posts!</p>
+    <?php
+	    foreach($page->children("limit=3, sort=-created") as $child) {
+            echo "<h2><a href='$child->url'>$child->title</a></h2>";
+            ?><p><?php echo $child->blog_intro; ?></p><?php
+            echo "<a href='$child->url'>weiter lesen</a>";
+        }
+    ?>
 </article>	
 	
 <div id="sidebar">
-	<?=$page->sidebar?>
+    <h3>Neueste Beiträge</h3>
+    <?php
+	    foreach($page->children() as $child) {
+            echo "<li><a href='$child->url'>$child->title</a></li>";
+        }
+    ?>
 </div>
