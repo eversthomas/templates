@@ -14,3 +14,8 @@ $subtitle = "a small subtitle for this page";
 $description = "a funny and sinpledescription for this nice site";
 $author = "Thomas Evers";
 $keywords = "one two three four five six seven eight nine ten";
+
+/*
+fields needed: title, body, blog_intro, blog_body, sidebar
+modules usefull: MarkupSimpleNavigation, ProcessFileEdit
+*/
