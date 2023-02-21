@@ -19,7 +19,7 @@ $home = $pages->get('/'); // homepage
 	<head id="html-head">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title><?php echo $page->title; ?></title>
-		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates; ?>styles/main.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates; ?>style.css" />
 		<script src="<?php echo $config->urls->templates; ?>scripts/main.js"></script>
 	</head>
 	<body id="html-body">
