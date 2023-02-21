@@ -29,20 +29,7 @@ $home = $pages->get('/'); // homepage
 
 		<header class="site-header">
 
-			<div class="wrapper">
-
-				<p id="topnav">
-					<?php echo $home->and($home->children)->implode(" / ", "<a href='{url}'>{title}</a>"); ?>
-				</p>
-				
-				<hr />
-				
-				<h1 id="headline">
-					<?php if($page->parents->count()): // breadcrumbs ?>
-						<?php echo $page->parents->implode(" &gt; ", "<a href='{url}'>{title}</a>"); ?> &gt;
-					<?php endif; ?>
-					<?php echo $page->title; // headline ?>
-				</h1>
+			<div id="header" class="wrapper">
 
 			</div>
 
