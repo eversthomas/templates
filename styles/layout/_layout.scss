@@ -1,0 +1,48 @@
+// layout
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+// header
+
+.site-header {
+  background: $header-color-bg;
+  color: $header-color;
+	
+  a {
+    h1 {
+	  color: $header-color;
+	  font-weight: bold;
+	  letter-spacing: 0.2rem;
+	}
+	
+  }
+  
+  .description {
+    font-weight: bold;
+	font-style: italic;
+	letter-spacing: 5px;
+  }
+}
+
+// main
+
+// sidebar
+
+aside {
+  background: $sidebar-color-bg;
+  color: $sidebar-color;
+}
+
+// footer
+
+.site-footer {
+  background: #2c3e50;
+  
+  p {
+    color: silver;
+  }
+}
