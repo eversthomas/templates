@@ -40,9 +40,9 @@ aside {
 // footer
 
 .site-footer {
-  background: #2c3e50;
+  background: $footer-color-bg;
   
   p {
-    color: silver;
+    color: $footer-color;
   }
 }

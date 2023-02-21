@@ -85,8 +85,8 @@ body {
   line-height: 1.618;
   max-width: 100vw;
   margin: 0;
-  color: #F0F0C9;
-  background-color: #D74E09;
+  color: #444444;
+  background-color: #ffffff;
   padding: 0;
 }
 /** fonts **/
@@ -230,19 +230,19 @@ td, th {
 }
 a {
   text-decoration: none;
-  color: #F0F0C9;
+  color: #444444;
 }
 a:visited {
-  color: #F0F0C9;
+  color: #444444;
   text-decoration: underline;
 }
 a:hover {
-  color: #F0F0C9;
+  color: #444444;
   text-decoration: underline;
 }
 /* Buttons, forms and input */
 input, textarea {
-  border: 1px solid #F0F0C9;
+  border: 1px solid #444444;
 }
 input:focus, textarea:focus {
   border: 1px solid #1d7484;
@@ -257,7 +257,7 @@ textarea {
   text-decoration: none;
   white-space: nowrap;
   background-color: #1d7484;
-  color: #D74E09;
+  color: #ffffff;
   border-radius: 1px;
   border: 1px solid #1d7484;
   cursor: pointer;
@@ -270,11 +270,11 @@ textarea {
 .button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type="submit"]:focus:enabled, input[type="submit"]:hover:enabled, input[type="reset"]:focus:enabled, input[type="reset"]:hover:enabled, input[type="button"]:focus:enabled, input[type="button"]:hover:enabled {
   background-color: #982c61;
   border-color: #982c61;
-  color: #D74E09;
+  color: #ffffff;
   outline: 0;
 }
 textarea, select, input {
-  color: #F0F0C9;
+  color: #444444;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
   margin-bottom: 10px;
@@ -298,7 +298,7 @@ label, legend, fieldset {
 }
 /*start the navigation container scss */
 .navigation-bar {
-  background: #F0F0C9;
+  background: #444444;
   /* style the hamburger */
   /* menu open and close */
   /* style the mobile menu */
@@ -363,7 +363,7 @@ label, legend, fieldset {
   right: -100vw;
   min-height: 100vh;
   width: 100vw;
-  background: #F0F0C9;
+  background: #444444;
   padding: 2rem;
   transition: all 0.6s;
 }
@@ -392,7 +392,7 @@ label, legend, fieldset {
     left: 0;
     width: 100%;
     min-height: 100%;
-    background: #F0F0C9;
+    background: #444444;
     padding: 5px;
     transition: all 0.6s;
   }
@@ -407,7 +407,7 @@ label, legend, fieldset {
     position: relative;
   }
   .navigation-bar nav ul li a {
-    color: #124E78;
+    color: #eeeeee;
   }
   .navigation-bar nav ul li ul {
     display: none;
@@ -438,11 +438,11 @@ img, video {
   padding: 1rem;
 }
 .site-header {
-  background: #124E78;
-  color: #F0F0C9;
+  background: #eeeeee;
+  color: #444444;
 }
 .site-header a h1 {
-  color: #F0F0C9;
+  color: #444444;
   font-weight: bold;
   letter-spacing: 0.2rem;
 }
@@ -456,10 +456,10 @@ aside {
   color: #444444;
 }
 .site-footer {
-  background: #2c3e50;
+  background: #444444;
 }
 .site-footer p {
-  color: silver;
+  color: #ffffff;
 }
 .cc-window {
   opacity: 1;

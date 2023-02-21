@@ -9,19 +9,22 @@
 $font-size-base: 1.1rem;
 $font-family-base: 'Montserrat', sans-serif;
 $font-family-heading: $font-family-base;
-$color-text: #F0F0C9;
+$color-text: #444444;
 
 $color-blossom: #1d7484;
 $color-fade: #982c61;
 
-$color-bg: #D74E09;
+$color-bg: #ffffff;
 $color-bg-alt: #f1f1f1;
 
-$header-color: #F0F0C9;
-$header-color-bg: #124E78;
+$header-color: #444444;
+$header-color-bg: #eeeeee;
 
 $sidebar-color: #444444;
 $sidebar-color-bg: #F2BB05;
+
+$footer-color: #ffffff;
+$footer-color-bg: #444444;
 
 @mixin word-wrap() {
     overflow-wrap: break-word;
