@@ -18,4 +18,10 @@
 	
 <div id="sidebar">
 	<?=$page->sidebar?>
+	<h3>Kategorien</h3>
+	<?php
+		foreach($page->categories as $category) {
+			echo "<li>$category->title</li>";
+		}
+	?>
 </div>

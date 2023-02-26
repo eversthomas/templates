@@ -27,4 +27,8 @@
             echo "<li><a href='$child->url'>$child->title</a></li>";
         }
     ?>
+
+    <h3>Kategorien</h3>
+    
+
 </div>
