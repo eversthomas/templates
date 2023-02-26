@@ -1,43 +1,39 @@
 /** fonts **/
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local(''),
-       url('fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("fonts/montserrat-v25-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700 - latin **/
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local(''),
-       url('fonts/montserrat-v25-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/montserrat-v25-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("fonts/montserrat-v25-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("fonts/montserrat-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-italic - latin **/
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: local(''),
-       url('fonts/montserrat-v25-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/montserrat-v25-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("fonts/montserrat-v25-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("fonts/montserrat-v25-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700italic - latin **/
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: local(''),
-       url('fonts/montserrat-v25-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/montserrat-v25-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("fonts/montserrat-v25-latin-700italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("fonts/montserrat-v25-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /** typo **/
@@ -47,33 +43,70 @@ body {
   font-size: $font-size-base;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  font-family: $font-family-heading;
-  font-weight: 700;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  @include word-wrap;
+// bootstrap base typography
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-h1 { font-size: 2.35rem }
-h2 { font-size: 2.00rem }
-h3 { font-size: 1.75rem }
-h4 { font-size: 1.5rem }
-h5 { font-size: 1.25rem }
-h6 { font-size: 1rem }
+h1,
+.h1 {
+  font-size: calc(2.5rem + 1.5vw);
+}
+
+h2,
+.h2 {
+  font-size: calc(2.3rem + 0.9vw);
+}
+
+h3,
+.h3 {
+  font-size: calc(2em + 0.6vw);
+}
+
+h4,
+.h4 {
+  font-size: calc(1.8rem + 0.3vw);
+}
+
+h5,
+.h5 {
+  font-size: 1.6rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.4rem;
+}
 
 p {
-  margin-top: 0px;
-  margin-bottom: 2.5rem;
+  font-size: calc(0.9rem + 0.3vw);
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-small, sub, sup {
+small,
+sub,
+sup {
   font-size: 75%;
 }
 
 strong {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 ul {
@@ -81,8 +114,8 @@ ul {
   margin-top: 0px;
   margin-bottom: 2.5rem;
   li {
-	  margin-bottom: 0.4em;
-	}
+    margin-bottom: 0.4em;
+  }
 }
 
 hr {
@@ -102,8 +135,8 @@ blockquote {
   background-color: #ecf0f1;
   color: #444444;
   p {
-	  margin-bottom: 0;
-	}
+    margin-bottom: 0;
+  }
 }
 
 /* Pre and Code */
@@ -118,7 +151,9 @@ pre {
   font-size: 0.9em;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
   font-size: 0.9em;
   padding: 0 0.5em;
   background-color: $color-bg-alt;
@@ -140,7 +175,8 @@ table {
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   padding: 0.5em;
   border-bottom: 1px solid $color-bg-alt;
 }
